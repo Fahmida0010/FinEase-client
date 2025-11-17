@@ -14,12 +14,10 @@ const MyTransactions = () => {
 
   const {user}=useContext(AuthContext)
 
-  // fetch transaction 
-
   const fetchTransactions = async () => {
     setLoading(true);
     try {
-      const res = await API.get(`/transactions/${user.email}`, {
+      const res = await API.get(`/my-transactions/${user.email}`, {
         params: { sortBy, sortOrder } 
       });
       setTransactions(res.data);
