@@ -1,10 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import API from '../../api/axiosInstance';
 import { toast, ToastContainer } from 'react-toastify';
 
-//  update transaction 
 const UpdateTransaction = () => {
   const { id } = useParams();
   const navigate = useNavigate();
