@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { useNavigate, Link } from "react-router";
 import { AuthContext } from "../../context/AuthProvider";
 
-
+// Login
 const Login = () => {
   const { login, loginWithGoogle } = useContext(AuthContext);
   const [error, setError] = useState("");
