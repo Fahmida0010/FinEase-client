@@ -7,7 +7,7 @@ import {
 } from "firebase/auth";
 import Swal from "sweetalert2";
 import { Link } from "react-router";
-import { auth } from "../../firebase/firebase.init"; // only auth
+import { auth } from "../../firebase/firebase.init"; 
 
 const Signup = () => {
   const [name, setName] = useState("");
