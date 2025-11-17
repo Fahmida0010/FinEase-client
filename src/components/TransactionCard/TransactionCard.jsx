@@ -34,6 +34,7 @@ const TransactionCard = ({ item, handleDelete }) => {
           Update
         </Link>
 
+{/* Delete transaction */}
         <button
           onClick={() => handleDelete(item._id)}
           className="px-4 py-2 bg-red-500 text-white rounded-lg"
