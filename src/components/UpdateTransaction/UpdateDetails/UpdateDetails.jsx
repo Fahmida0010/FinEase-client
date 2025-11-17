@@ -10,6 +10,7 @@ const UpdateDetails = () => {
   const [details, setDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // fetch 
   const fetchDetails = async () => {
     try {
       const res = await API.get(`/transactions/${id}`);
