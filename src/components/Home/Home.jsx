@@ -35,8 +35,6 @@ const Home = () => {
 
   return (
     <div className="container mx-auto p-6">
-
-      {/* Banner Section */}
       <section className="mt-6 mb-6 space-y-6">
         <div className="flex flex-col md:flex-row items-center bg-gray-200 rounded-lg shadow-lg overflow-hidden">
           <img
