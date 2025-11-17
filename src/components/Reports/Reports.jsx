@@ -71,8 +71,6 @@ const Reports = () => {
               </PieChart>
             </ResponsiveContainer>
           </div>
-
-          {/* Bar Chart for Monthly Totals */}
           <div className="mb-6 w-full h-[350px] min-h-[350px]">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={filteredMonthly}>
