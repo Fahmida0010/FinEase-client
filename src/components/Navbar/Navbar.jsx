@@ -73,7 +73,7 @@ const handleTheme =(checked) => {
             )}
           </div>
         )}
-    
+    {/* theme */}
        <input  
     onChange={(e) => handleTheme(e.target.checked)}
        type="checkbox"
