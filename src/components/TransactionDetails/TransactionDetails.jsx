@@ -9,6 +9,8 @@ const TransactionDetails = () => {
   const [transaction, setTransaction] = useState(null);
   const [loading, setLoading] = useState(true);
 
+// fetch transaction 
+
   useEffect(() => {
     const fetchTransaction = async () => {
       try {
