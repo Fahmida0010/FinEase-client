@@ -33,8 +33,6 @@ const Footer = () => {
           <p>Phone: +880 1700-123456</p>
           <p>Sylhet, Bangladesh</p>
         </div>
-
-        {/* Terms & Conditions */}
         <div>
           <h3 className="text-xl font-semibold text-yellow-600 mb-3">Quick Links</h3>
           <ul className="space-y-2">
