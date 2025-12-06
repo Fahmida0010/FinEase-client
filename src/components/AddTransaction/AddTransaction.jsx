@@ -2,8 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
 import Footer from "../Footer/Footer";
-import API from "../../api/axiosInstance";
 import { AuthContext } from "../../context/AuthProvider";
+import API from "../../API/axiosInstance";
 
 const categories = [
   "Food",
