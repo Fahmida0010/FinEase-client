@@ -8,9 +8,8 @@ This project demonstrates **CRUD operations**, **authentication**, **backend int
 
 ##  Live Links
 
--  **Live Website:** [ ](#)
-- 💻 **Client Repository:** [  ](#)
-- 🖥️ **Server Repository:** [  ](#)
+-  **Live Website:** https://cozy-sfogliatella-b1ff0b.netlify.app
+- 🖥️ **Server Repository:**https://github.com/Fahmida0010/FinEase-Server.git
 
 ---
 
