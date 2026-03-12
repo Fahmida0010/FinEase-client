@@ -88,7 +88,7 @@ const Home = () => {
       {/* Static Sections */}
       <section className="grid md:grid-cols-2 gap-6 bg-amber-300">
         <div className="bg-yellow-200 p-6 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Budgeting Tips</h2>
+          <h2 className="text-xl font-semibold mb-2 text-green-500">Budgeting Tips</h2>
           <ul className="list-disc pl-5 text-sm text-gray-700">
             <li>Track every expense for a month.</li>
             <li>Set aside emergency savings first.</li>
@@ -96,7 +96,7 @@ const Home = () => {
           </ul>
         </div>
         <div className="bg-yellow-200 p-6 rounded shadow">
-          <h2 className="text-xl font-semibold mb-2">Why Financial Planning Matters</h2>
+          <h2 className="text-xl font-semibold mb-2 text-green-500">Why Financial Planning Matters</h2>
           <p className="text-sm text-gray-700">
             Good financial planning reduces daily stress by giving you a clear roadmap for income, spending, and saving.
             It helps you stay organized, avoid unnecessary expenses, and prepare for unexpected challenges.

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
-import API from '../../api/axiosInstance';
+import API from '../../API/axiosInstance';
 import { toast, ToastContainer } from 'react-toastify';
 
 const UpdateTransaction = () => {
@@ -56,27 +56,26 @@ const UpdateTransaction = () => {
     }
   };
 
-  
   return (
     <div className="container mx-auto p-6 max-w-md">
       <ToastContainer />
 
-      <h2 className="text-2xl font-bold mb-4">Update Transaction</h2>
+      <h2 className="text-2xl font-bold mb-4 dark:text-white text-gray-800">Update Transaction</h2>
 
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow p-5 rounded flex flex-col gap-3"
+        className="bg-white dark:bg-gray-800 shadow p-5 rounded flex flex-col gap-3 transition-colors duration-300"
       >
         <select
           name="type"
           value={form.type}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border border-gray-300 dark:border-gray-600 p-2 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none"
           required
         >
-          <option value="">Select Type</option>
-          <option value="income">Income</option>
-          <option value="expense">Expense</option>
+          <option value="" className="dark:bg-gray-700">Select Type</option>
+          <option value="income" className="dark:bg-gray-700">Income</option>
+          <option value="expense" className="dark:bg-gray-700">Expense</option>
         </select>
 
         <input
@@ -84,7 +83,7 @@ const UpdateTransaction = () => {
           value={form.category}
           onChange={handleChange}
           placeholder="Category"
-          className="border p-2 rounded"
+          className="border border-gray-300 dark:border-gray-600 p-2 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none placeholder-gray-400 dark:placeholder-gray-300"
           required
         />
 
@@ -94,7 +93,7 @@ const UpdateTransaction = () => {
           value={form.amount}
           onChange={handleChange}
           placeholder="Amount"
-          className="border p-2 rounded"
+          className="border border-gray-300 dark:border-gray-600 p-2 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none placeholder-gray-400 dark:placeholder-gray-300"
           required
         />
 
@@ -103,7 +102,7 @@ const UpdateTransaction = () => {
           value={form.description}
           onChange={handleChange}
           placeholder="Description"
-          className="border p-2 rounded"
+          className="border border-gray-300 dark:border-gray-600 p-2 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none placeholder-gray-400 dark:placeholder-gray-300"
           required
         />
 
@@ -112,13 +111,13 @@ const UpdateTransaction = () => {
           type="date"
           value={form.date}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border border-gray-300 dark:border-gray-600 p-2 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none"
           required
         />
 
         <button
           type="submit"
-          className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"
+          className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded transition-colors font-medium"
         >
           Update Transaction
         </button>

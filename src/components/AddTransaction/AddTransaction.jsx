@@ -70,18 +70,22 @@ const AddTransaction = ({ existingTransaction }) => {
   };
 
   return (
-    <div className="container mx-auto p-6">
-      <h2 className="text-2xl text-blue-700 font-semibold mb-4">Add Transaction</h2>
+    <div className="container mx-auto p-6 min-h-screen text-base-content">
+      {/* Title changed to text-primary to support dark mode */}
+      <h2 className="text-2xl font-semibold mb-4 text-center text-primary">
+        {existingTransaction ? "Update Transaction" : "Add Transaction"}
+      </h2>
 
       <form 
         onSubmit={handleSubmit}
-        className="max-w-md mx-auto bg-sky-300 p-6 rounded shadow space-y-4 mt-6"
+        // bg-sky-300 replaced with bg-base-200 or card background
+        className="max-w-md mx-auto bg-base-200 p-6 rounded-xl shadow-xl space-y-4 mt-6 border border-base-300"
       >
         <select
           name="type"
           value={formData.type}
           onChange={handleChange}
-          className="w-full border p-2 rounded "
+          className="select select-bordered w-full bg-base-100"
         >
           <option value="income">Income</option>
           <option value="expense">Expense</option>
@@ -93,7 +97,7 @@ const AddTransaction = ({ existingTransaction }) => {
           value={formData.category}
           onChange={handleChange}
           required
-          className="w-full border rounded-lg px-3 py-2"
+          className="select select-bordered w-full bg-base-100"
         >
           <option value="">Select Category</option>
           {categories.map((cat) => (
@@ -110,7 +114,7 @@ const AddTransaction = ({ existingTransaction }) => {
           placeholder="Amount"
           value={formData.amount}
           onChange={handleChange}
-          className="w-full border p-2 rounded"
+          className="input input-bordered w-full bg-base-100"
           required
         />
 
@@ -121,7 +125,7 @@ const AddTransaction = ({ existingTransaction }) => {
           placeholder="Description"
           value={formData.description}
           onChange={handleChange}
-          className="w-full border p-2 rounded"
+          className="input input-bordered w-full bg-base-100"
           required
         />
 
@@ -131,27 +135,28 @@ const AddTransaction = ({ existingTransaction }) => {
           name="date"
           value={formData.date?.slice(0, 10) || ""}
           onChange={handleChange}
-          className="w-full border p-2 rounded"
+          className="input input-bordered w-full bg-base-100"
           required
         />
 
-        {/* Read-only name & email */}
+        {/* Read-only name & email - styled to look disabled but readable */}
         <input
           type="text"
           value={formData.name}
           readOnly
-          className="w-full border p-2 rounded bg-gray-300"
+          className="input input-bordered w-full bg-base-300 cursor-not-allowed opacity-70"
         />
 
         <input
           type="email"
           value={formData.email}
           readOnly
-          className="w-full border p-2 rounded bg-gray-300"
+          className="input input-bordered w-full bg-base-300 cursor-not-allowed opacity-70"
         />
+
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+          className="btn btn-primary w-full text-white"
         >
           {existingTransaction ? "Update Transaction" : "Add Transaction"}
         </button>
@@ -163,4 +168,3 @@ const AddTransaction = ({ existingTransaction }) => {
 };
 
 export default AddTransaction;
-
