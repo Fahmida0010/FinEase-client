@@ -102,6 +102,7 @@ const Home = () => {
             It helps you stay organized, avoid unnecessary expenses, and prepare for unexpected challenges.
             By setting realistic goals and tracking your progress, you gain control over your finances and peace of mind for the future.
           </p>
+          
         </div>
       </section>
 
